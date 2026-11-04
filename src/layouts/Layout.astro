@@ -221,11 +221,12 @@ const {
         const wrapper = document.querySelector('.js-site-wrapper')
         const intro = document.querySelector('.js-intro')
         const mount = document.querySelector('.js-mount')
+        const head = document.querySelector('.site-head')
 
         if (wrapper) wrapper.removeAttribute('style')
+        if (head) (head as HTMLElement).style.opacity = '1'
         if (intro) intro.remove()
         if (mount) mount.style.opacity = '1'
-
         document.documentElement.classList.remove('is-scroll-blocked')
         document.dispatchEvent(new CustomEvent('intro'))
 
@@ -471,9 +472,9 @@ const {
         tl.call(
           () => {
             mount.style.opacity = '1'
+            const head = document.querySelector('.site-head')
+            if (head) (head as HTMLElement).style.opacity = '1'
             intro.remove()
-
-            const skipBtn = document.querySelector('.js-skip-intro')
             if (skipBtn) skipBtn.remove()
 
             document.documentElement.classList.remove('is-scroll-blocked')

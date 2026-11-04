@@ -291,15 +291,14 @@ const menu = [
       this.canWrite = false
       this.isPaused = true
 
-      // Init
-      Ticker.nextTick(this.init, this)
-    }
-
-    /**
-     * Init
-     */
-    init() {
+      // Bind events immediately to catch early or synchronous intro dispatch
       this.bindEvents()
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      if (prefersReducedMotion || !document.querySelector('.js-intro')) {
+        this.el.style.opacity = '1'
+        this.canWrite = true
+      }
     }
 
     /**
@@ -352,6 +351,13 @@ const menu = [
      * Intro
      */
     intro() {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      if (prefersReducedMotion) {
+        this.el.style.opacity = '1'
+        this.canWrite = true
+        return
+      }
+
       const logo = this.el.querySelector('.js-logo')
       const menuItems = this.el.querySelectorAll('.js-menu-item')
       const qrCode = this.el.querySelector('.js-qr-code')
@@ -363,7 +369,6 @@ const menu = [
       tl.set(this.el, {
         opacity: 1,
       })
-
       tl.from(
         this.el,
         {
@@ -554,8 +559,7 @@ const menu = [
     width: 100%;
 
     border-bottom: 1px solid color(secondary);
-    opacity: 0;
-
+    opacity: 1;
     &__container {
       @include flex(row, stretch, space-between);
 
