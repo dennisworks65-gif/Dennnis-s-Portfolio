@@ -1,0 +1,284 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout 
+  title="OP-1 Field – Tactile Hardware UI & Screen Graphics — Dennis Essien"
+  description="Designing a hyper-tactile, high-density screen graphics system inspired by Teenage Engineering's OP-1 Field synthesizer, fusing mechanical playfulness with micro-interaction precision."
+>
+  <article class="project-detail">
+    <div class="project-detail__inner">
+      <a href="/work" class="project-detail__back">← Back to Work</a>
+
+      <header class="project-detail__header">
+        <div class="project-detail__tags">
+          <span class="project-detail__tag"># Product Design</span>
+          <span class="project-detail__tag"># Hardware UI</span>
+          <span class="project-detail__tag"># Teenage Engineering</span>
+          <span class="project-detail__tag"># Micro-Interactions</span>
+        </div>
+
+        <h1 class="project-detail__title">OP-1 Field</h1>
+        <p class="project-detail__tagline">
+          Tactile synthesizer screen graphics & hardware interface system — channelizing Teenage Engineering's iconic industrial ethos into expressive vector physics, tactile encoder mapping, and playful acoustic metaphors.
+        </p>
+
+        <div class="project-detail__meta">
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Client / Inspiration</span>
+            <span class="project-detail__meta-value">Teenage Engineering System</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Role / Scope</span>
+            <span class="project-detail__meta-value">Hardware UI & Graphics Designer</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Timeline</span>
+            <span class="project-detail__meta-value">5 Weeks (2025)</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Display Specs</span>
+            <span class="project-detail__meta-value">Embedded High-Res Display (24-bit)</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Full-Width Hero Visual Showcase -->
+      <div class="project-detail__hero-showcase">
+        <img 
+          src="/images/projects/op1-field/cover.webp" 
+          alt="OP-1 Field Synthesizer hardware interface cover overview"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
+      <!-- SECTION 1: PROJECT BRIEF -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>01 / Project Brief</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Translating deep DSP acoustic engines into vibrant, immediate graphical worlds.
+            </h2>
+            <p>
+              Teenage Engineering's OP-1 Field is revered globally for transforming complex digital signal processing (DSP) into a tactile playground of tactile wonder. When musicians compose, perform, and modulate audio on physical instruments, their cognitive attention must remain locked into auditory flow rather than deciphering sterile spreadsheet-like parameters.
+            </p>
+            <p>
+              This UI design exploration focused on crafting a complete screen graphics and interaction architecture for the instrument. Rather than relying on skeuomorphic knobs or generic digital sliders, each screen introduces a unique visual metaphor—from real-time oscilloscope ripples to mechanical 4-track tape spools—inviting intuitive experimentation without cognitive friction.
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Design Philosophy</h4>
+                <p>Mechanical playfulness meets laser precision: turning invisible acoustic phenomena (harmonic overtones, phase alignment, dynamic envelopes) into instantly legible physical metaphors.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Ergonomic Benchmark</h4>
+                <p>Zero menu-diving during live performance: every core sound-shaping parameter must be reachable and identifiable in under 200 milliseconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-detail__media-single">
+          <img 
+            src="/images/projects/op1-field/sample.webp" 
+            alt="OP-1 Field Sample Engine Interface Detail"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="project-detail__caption">Sample Engine Interface — Waveform Scrubbing, Transient Slicing & Direct Acoustic Line-In Feedback</div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: THE PROBLEM -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--alert">
+              <span>02 / The Problem</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              The embedded display challenge: dense DSP parameters vs. split-second performance legibility.
+            </h2>
+            <p>
+              Electronic musical instruments frequently fail their users in live performance conditions. Traditional hardware synths crowd their compact screens with tiny alphanumeric labels, esoteric multi-level submenus, and disconnected rotary controls where the musician has no tactile certainty which encoder alters which frequency.
+            </p>
+            <p>
+              Key UX hurdles addressed in this system:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Encoder-to-Screen Spatial Disconnect</h4>
+                <p>When physical dials don't align spatially or chromatically with visual screen elements, musicians constantly pause to verify they are twisting the correct knob.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Visual Fatigue Under Stage Lighting</h4>
+                <p>Low-contrast color schemes wash out in direct daylight and blind performers in pitch-black venue settings, obscuring critical audio clipping warnings.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Abstraction of Complex Sound Physics</h4>
+                <p>Parameters like 24-band vocoder formant shifts or non-linear spring reverb dampening are incomprehensible when rendered as cold percentages (e.g., "REV_DMP: 47%").</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: THE SOLUTION & UX STRATEGY -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--success">
+              <span>03 / The Solution</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              A 1:1 four-color rotary alignment system, dynamic vector physics, and tactile visual metaphors.
+            </h2>
+            <p>
+              We established an unshakeable relationship between hardware ergonomics and graphic design. Across every engine mode—from dual-oscillator FM synthesis to 4-track tape recording—the system adheres to three uncompromising design pillars:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Pillar 1: Persistent Four-Axis Color Mapping</h4>
+                <p>The screen's four interactive corners directly correspond to the hardware's four physical rotary encoders (Blue, Ochre, Gray, Orange). Performers develop subconscious muscle memory within minutes.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 2: Tactile Physical Simulations</h4>
+                <p>Replaced abstract numbers with living simulations: authentic reel-to-reel spools that physically spin with tape speed, spring coils that stretch with tension, and fluid particles that disperse with white noise filtering.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 3: High-Contrast Vector Ergonomics</h4>
+                <p>Strict high-contrast vector geometries paired with monospaced data typography ensure crisp readability at arm's length under any ambient lighting condition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISUAL GALLERY OF WORK -->
+        <div class="project-detail__gallery-block">
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--2col">
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/tape.webp" alt="4-Track Reel-to-Reel Tape Recorder" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">4-Track Reel-to-Reel Tape Recorder & Transport System</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/cluster.webp" alt="Cluster Multi-Oscillator Phase Sculpting" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Cluster Multi-Oscillator Phase & Harmonic Sculpting</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/wave.webp" alt="Dual-Axis Oscilloscope Frequency Modulation" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Dual-Axis Oscilloscope & Frequency Modulation Canvas</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/dsynth.webp" alt="D-Synth Dual Oscillator Matrix" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">D-Synth Dual Oscillator Matrix & Digital Wave Shapes</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/envelope.webp" alt="Dynamic ADSR Envelope Visualizer" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Dynamic ADSR Envelope Visualizer & Transient Shaper</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/output.webp" alt="Master Stereo Field Spatializer" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Master Stereo Field Spatializer, Limiter & Gain Staging</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/noise.webp" alt="Perlin Noise Generator and Resonant Filter" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Perlin Noise Generator & Resonant Frequency Filter</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/digital.webp" alt="Digital Synthesis Engine and Harmonic Matrix" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Digital Synthesis Engine & Harmonic Overtone Matrix</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/mixer.webp" alt="4-Channel Tactical Hardware Mixer" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">4-Channel Tactical Hardware Mixer & Panning Surface</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/rec.webp" alt="Live Sample and Direct Acoustic Line-In" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Live Sample & Direct Acoustic Line-In Interface</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/spring.webp" alt="Spring Reverb Physical Simulation" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Spring Reverb Physical Simulation & Tension Mechanics</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/vocoder.webp" alt="24-Band Resonant Vocoder and Formant Modulator" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">24-Band Resonant Vocoder & Formant Modulator</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/eq.webp" alt="Parametric 3-Band Graphic Equalizer" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Parametric 3-Band Graphic Equalizer & Master Curve</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/op1-field/strings.webp" alt="Physical Modeling String Resonance Engine" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Physical Modeling String Resonance Engine</div>
+            </div>
+          </div>
+
+          <div class="project-detail__media-single">
+            <img 
+              src="/images/projects/op1-field/connect.webp" 
+              alt="Wireless MIDI and Peripheral Device Pairing Matrix"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="project-detail__caption">Wireless MIDI & Peripheral Device Pairing Matrix — Multi-Device Topology System</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: IMPACT & KEY OUTCOMES -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>04 / Impact</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              A benchmark study in hardware UI, tactile ergonomics, and expressive industrial craft.
+            </h2>
+            <p>
+              By treating embedded screen design as an extension of the physical hardware body, this interface architecture proves that electronic instruments can provide deep technical capability without compromising the pure joy of musical play.
+            </p>
+
+            <div class="project-detail__metrics-row">
+              <div class="project-detail__metric-box">
+                <div class="metric-number">1:1</div>
+                <div class="metric-desc">Direct Encoder-to-Screen Spatial Alignment</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">16</div>
+                <div class="metric-desc">Unified Synthesis & Processing Engine Modes</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">0ms</div>
+                <div class="metric-desc">Cognitive Menu-Diving During Performance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT FOOTER NAVIGATION -->
+      <nav class="project-detail__nav-footer" aria-label="Project pagination">
+        <a href="/work/netto">← Previous: Netto Marken-Discount</a>
+        <a href="/work">All Selected Works</a>
+        <a href="/work/seed">Next: Seed B2B SaaS →</a>
+      </nav>
+    </div>
+  </article>
+</Layout>

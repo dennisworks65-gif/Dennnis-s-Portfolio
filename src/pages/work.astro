@@ -1,69 +1,86 @@
 ---
 import Layout from '../layouts/Layout.astro'
+
+const projects = [
+  {
+    title: 'Fragile Base',
+    url: '/work/fragile-base',
+    tag: 'Contemporary fashion house digital commerce',
+    thumb: '/images/projects/fragile-base.webp',
+    alt: 'Fragile Base digital flagship presentation showing contemporary tailoring and lookbook grid',
+    bg: '#0e0e12',
+  },
+  {
+    title: 'Netto Marken-Discount',
+    url: '/work/netto',
+    tag: 'Supermarket chain career & recruitment platform',
+    thumb: '/images/projects/netto.webp',
+    alt: 'Netto Marken-Discount digital career portal showing neighborhood branch finder and career paths',
+    bg: '#16213e',
+  },
+  {
+    title: 'OP-1 Field',
+    url: '/work/op1',
+    tag: 'Tactile synthesizer screen graphics & hardware UI',
+    thumb: '/images/projects/op1.webp',
+    alt: 'OP-1 Field synthesizer hardware interface screen graphics with 4-axis encoder mapping',
+    bg: '#1c1d22',
+  },
+  {
+    title: 'Seed',
+    url: '/work/seed',
+    tag: 'B2B SaaS financial operations platform',
+    thumb: '/images/projects/seed.webp',
+    alt: 'Seed B2B SaaS platform interface showing invoicing and subscription scheduling',
+    bg: '#1a1a2e',
+  },
+  {
+    title: 'xToken',
+    url: '/work/xtoken',
+    tag: 'Decentralized staking & liquidity terminal',
+    thumb: '/images/projects/xtoken.webp',
+    alt: 'xToken decentralized staking terminal interface showing asset analytics dashboard',
+    bg: '#18122b',
+  },
+  {
+    title: 'xToken Brand',
+    url: '/work/xtoken-brand',
+    tag: 'Protocol visual identity & design system styleguide',
+    thumb: '/images/projects/xtoken-brand.png',
+    alt: 'xToken brand identity design system showing logomark construction and electric color tokens',
+    bg: '#251749',
+  },
+  {
+    title: 'eDiye Studio',
+    url: '/work/ediye',
+    tag: 'Digital product design & development studio',
+    thumb: '/images/projects/ediye.webp',
+    alt: 'eDiye design and development studio web presence',
+    bg: '#533483',
+  },
+]
 ---
 
-<Layout title="Work – Creative Designer">
+<Layout title="Work – Selected Projects — Dennis Essien">
   <section class="page-work">
     <div class="page__inner">
       <h1 class="page__title">Work</h1>
-      <p class="page__intro">Selected projects that I've had the pleasure of working on.</p>
+      <p class="page__intro">Selected product design, hardware interfaces, brand systems, and digital flagships.</p>
 
       <div class="page__grid">
-        <a href="/work/xtoken" class="project">
-          <div class="project__thumb" style="background: #1a1a2e;">
-            <img src="/images/projects/xtoken.webp" alt="Xtoken DAO platform interface showing token management dashboard" />
-          </div>
-          <div class="project__info">
-            <h3 class="project__title">Xtoken</h3>
-            <span class="project__tag">a dao platform</span>
-          </div>
-        </a>
-
-        <a href="/work/netto" class="project">
-          <div class="project__thumb" style="background: #16213e;">
-            <img src="/images/projects/netto.webp" alt="Netto supermarket onboarding platform with step-by-step registration flow" />
-          </div>
-          <div class="project__info">
-            <h3 class="project__title">Netto</h3>
-            <span class="project__tag">a supermart chain on-boarding platform</span>
-          </div>
-        </a>
-
-        <a href="/work/control-base" class="project">
-          <div class="project__thumb" style="background: #0f3460;">
-            <img src="/images/projects/control-base.webp" alt="Control Base Neo-Nigerian fashion eCommerce website homepage" />
-          </div>
-          <div class="project__info">
-            <h3 class="project__title">Control Base</h3>
-            <span class="project__tag">Neo-Nigerian fashion eCommerce site</span>
-          </div>
-        </a>
-
-        <a href="/work/ediye" class="project">
-          <div class="project__thumb" style="background: #533483;">
-            <img src="/images/projects/ediye.webp" alt="eDiye website and app development studio" />
-          </div>
-          <div class="project__info">
-            <h3 class="project__title">eDiye</h3>
-            <span class="project__tag">Website/app development studio</span>
-          </div>
-        </a>
-
-        <a href="#" class="project project--coming-soon" aria-disabled="true" tabindex="-1">
-          <div class="project__thumb" style="background: #e94560;"></div>
-          <div class="project__info">
-            <h3 class="project__title">Email Designs</h3>
-            <span class="project__tag">compilation of various email designs</span>
-          </div>
-        </a>
-
-        <a href="/work/seed" class="project">
-          <div class="project__thumb" style="background: #1a1a2e;"></div>
-          <div class="project__info">
-            <h3 class="project__title">Seed</h3>
-            <span class="project__tag">a SaaS platform</span>
-          </div>
-        </a>
+        {
+          projects.map((item) => (
+            <a href={item.url} class="project">
+              <div class="project__thumb" style={`background: ${item.bg};`}>
+                <img src={item.thumb} alt={item.alt} loading="lazy" decoding="async" />
+              </div>
+              <div class="project__info">
+                <h3 class="project__title">{item.title}</h3>
+                <span class="project__tag">{item.tag}</span>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -71,10 +88,10 @@ import Layout from '../layouts/Layout.astro'
 
 <style lang="scss">
   .page-work {
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 8rem;
 
     .page__inner {
-      max-width: 60rem;
+      max-width: 68rem;
       margin: 0 auto;
     }
 
@@ -83,12 +100,15 @@ import Layout from '../layouts/Layout.astro'
       font: 700 4rem / 0.9 font-family(bigger);
       text-transform: uppercase;
       color: color(secondary);
+      letter-spacing: -0.01em;
     }
 
     .page__intro {
-      margin: 0 0 3rem;
-      font: 200 1.25rem / 1.5 font-family(editorial);
+      margin: 0 0 3.5rem;
+      font: 200 1.35rem / 1.5 font-family(editorial);
       color: color(secondary);
+      opacity: 0.85;
+      max-width: 48rem;
     }
 
     .page__grid {
@@ -96,6 +116,7 @@ import Layout from '../layouts/Layout.astro'
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: color(secondary);
+      border: 1px solid color(secondary);
 
       @include mq(tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -107,34 +128,26 @@ import Layout from '../layouts/Layout.astro'
     }
 
     .project {
-      display: block;
+      display: flex;
+      flex-direction: column;
       background: color(primary);
       text-decoration: none;
-      transition: opacity 0.3s ease, transform 0.2s ease;
+      transition: opacity 0.25s ease, background-color 0.2s ease;
 
       &:hover {
-        opacity: 0.85;
+        opacity: 0.88;
+
+        .project__thumb img {
+          transform: scale(1.03);
+        }
       }
 
       &:active {
-        transform: scale(0.98);
-      }
-
-      &--coming-soon {
-        cursor: default;
-        opacity: 0.5;
-
-        &:hover {
-          opacity: 0.5;
-        }
-
-        &:active {
-          transform: none;
-        }
+        transform: scale(0.99);
       }
 
       &__thumb {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 16 / 10;
         width: 100%;
         overflow: hidden;
 
@@ -142,26 +155,32 @@ import Layout from '../layouts/Layout.astro'
           width: 100%;
           height: 100%;
           object-fit: cover;
+          display: block;
+          transition: transform 0.4s ease;
         }
       }
 
       &__info {
-        padding: 1rem;
+        padding: 1.25rem 1.25rem 1.5rem;
         border-top: 1px solid color(secondary);
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        flex-grow: 1;
       }
 
       &__title {
-        margin: 0 0 0.25rem;
-        font: 700 1rem / 1.2 font-family(fraktion);
+        margin: 0;
+        font: 700 1.05rem / 1.25 font-family(fraktion);
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: color(secondary);
       }
 
       &__tag {
-        font: 200 0.75rem / 1 font-family(editorial);
+        font: 200 0.92rem / 1.4 font-family(editorial);
         color: color(secondary);
-        opacity: 0.6;
+        opacity: 0.75;
       }
     }
   }

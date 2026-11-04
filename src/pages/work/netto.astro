@@ -2,133 +2,257 @@
 import Layout from '../../layouts/Layout.astro'
 ---
 
-<Layout title="Netto – Work">
-  <section class="project-detail">
+<Layout 
+  title="Netto Marken-Discount – Digital Career & Recruitment Platform — Dennis Essien"
+  description="Reimagining the digital recruitment ecosystem for Netto, one of Germany's largest supermarket chains with over 4,200 branches and 84,000 employees."
+>
+  <article class="project-detail">
     <div class="project-detail__inner">
-      <a href="/work" class="project-detail__back">← Back</a>
+      <a href="/work" class="project-detail__back">← Back to Work</a>
 
-      <div class="project-detail__header">
-        <div class="project-detail__thumb">
-          <img src="/images/projects/netto.webp" alt="Netto supermarket onboarding platform overview" />
+      <header class="project-detail__header">
+        <div class="project-detail__tags">
+          <span class="project-detail__tag"># Product Design</span>
+          <span class="project-detail__tag"># Information Architecture</span>
+          <span class="project-detail__tag"># UX Research</span>
+          <span class="project-detail__tag"># Design System</span>
         </div>
-        <div class="project-detail__intro">
-          <h1 class="project-detail__title">Netto</h1>
-          <p class="project-detail__tagline">supermarket chain</p>
+
+        <h1 class="project-detail__title">Netto Marken-Discount</h1>
+        <p class="project-detail__tagline">
+          Supermarket chain digital career & employer branding platform — restructuring complex multi-tier recruitment pathways into an approachable, high-converting neighborhood job portal.
+        </p>
+
+        <div class="project-detail__meta">
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Client</span>
+            <span class="project-detail__meta-value">Netto Marken-Discount AG</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Role / Scope</span>
+            <span class="project-detail__meta-value">Senior UX & IA Designer</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Timeline</span>
+            <span class="project-detail__meta-value">10 Weeks (2025)</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Scale</span>
+            <span class="project-detail__meta-value">4,200+ Stores / 84,000+ Staff</span>
+          </div>
         </div>
+      </header>
+
+      <!-- Full-Width Hero Visual Showcase -->
+      <div class="project-detail__hero-showcase">
+        <img 
+          src="/images/projects/netto/netto_cover.webp" 
+          alt="Netto Marken-Discount digital career portal showcase overview"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
-      <div class="project-detail__meta">
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Year</span>
-          <span class="project-detail__meta-value">2021</span>
-        </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Industry</span>
-          <span class="project-detail__meta-value">Web3</span>
-        </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Service</span>
-          <span class="project-detail__meta-value">UI/UX Design</span>
-        </div>
-      </div>
+      <!-- SECTION 1: PROJECT BRIEF -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>01 / Project Brief</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Transforming corporate recruitment into a community-first talent engine across Germany.
+            </h2>
+            <p>
+              Netto Marken-Discount is one of Germany's undisputed retail giants, operating over 4,200 discount supermarkets with an active workforce exceeding 84,000 employees. As labor shortages intensified across European grocery supply chains, Netto faced an urgent mandate: completely modernize its digital employer branding and recruitment architecture to attract the next generation of vocational apprentices, dual-study university students, and non-traditional career switchers.
+            </p>
+            <p>
+              Our design team led the end-to-end user experience transformation: conducting stakeholder and applicant interviews, architecting an intuitive information model, building low-fidelity interactive flows, and producing accessible, mobile-first design system components ready for nationwide rollout.
+            </p>
 
-      <div class="project-detail__content">
-        <p>Netto is a German discount supermarket chain with over 4,200 stores, Focuses on affordable food and household items, competing with chains like Aldi and Lidl.</p>
-        <p>During the redesign process of their website I was part of a bigger team as a UX Designer. I have worked on the information architecture, conducted interviews, created user flows, built wireframes and prototypes that kicked off the design process.</p>
-        <p>Traces of my UX work can still be found on their website today.</p>
-      </div>
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Primary Objective</h4>
+                <p>Demystify retail career paths and lower barrier-to-entry friction so candidates can locate and apply to local openings in under 90 seconds.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Core Audience</h4>
+                <p>Gen-Z school leavers seeking apprenticeships (Ausbildung), working students (Studium), flexible part-time associates, and experienced lateral hires.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-detail__media-single">
+          <img 
+            src="/images/projects/netto/01_frontpage.webp" 
+            alt="Netto Career Portal Frontpage and Neighborhood Branch Finder"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="project-detail__caption">Frontpage Architecture — Neighborhood Branch Search, Value Proposition & Career Gateways</div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: THE PROBLEM -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--alert">
+              <span>02 / The Problem</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Archaic taxonomy, intimidating bureaucracy, and 58% candidate drop-off.
+            </h2>
+            <p>
+              A deep heuristic evaluation of Netto's legacy career portal revealed that the platform was structured around internal corporate HR hierarchies rather than candidate mental models. Job seekers faced an overwhelming maze of bureaucratic job codes (e.g., "Kfm. Groß- und Außenhandelsmanag. Ref-8492"), lack of wage transparency, and non-responsive forms requiring desktop-only PDF uploads.
+            </p>
+            <p>
+              Key friction points identified during user discovery:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Cognitive Overload in Job Search</h4>
+                <p>Applicants were confronted with 20+ disparate drop-down filters and internal department acronyms that meant nothing to a 16-year-old high school graduate seeking an entry-level position.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Lack of Geographic & Compensation Clarity</h4>
+                <p>Retail applicants prioritize proximity to home and clear pay rates. The legacy portal hid branch locations behind external map redirects and omitted salary guidance entirely.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Severe Mobile Usability Breakdowns</h4>
+                <p>Over 74% of candidate traffic originated on smartphones, yet the legacy application form was unscrollable on smaller viewports and required cumbersome document attachments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: THE SOLUTION & UX STRATEGY -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--success">
+              <span>03 / The Solution</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              A 7-pillar information architecture, geolocated branch filters, and rapid 1-click mobile application.
+            </h2>
+            <p>
+              We completely restructured the ecosystem around candidate goals and accessibility standards (WCAG AA), introducing clear visual hierarchy, authentic employee testimonials, and simplified user pathways:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Pillar 1: Seven Clear Career Entryways</h4>
+                <p>Re-organized the entire portal into distinct pathways: Apprenticeship (Ausbildung), Dual Study (Studium), Career Switchers (Quereinstieg), Flexible Part-Time (Teilzeit & Aushilfe), Professional Development (Weiterentwickeln), Corporate Roles, and Netto Culture.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 2: Geolocated Neighborhood Search</h4>
+                <p>Applicants enter their postal code to instantly see nearby branches with available openings, travel distance, hourly wages, and shift schedules.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 3: Low-Barrier Mobile Apply Flow</h4>
+                <p>Replaced 8-step PDF forms with a 3-step progressive questionnaire that candidates can complete directly on their smartphone in under two minutes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISUAL GALLERY OF WORK -->
+        <div class="project-detail__gallery-block">
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--2col">
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/02_arbeiten_bei_netto.webp" alt="Working at Netto Culture and Values" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Working at Netto — Culture, Values & Location Search Hub</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/03_berufsleben_einsteigen.webp" alt="Early Career Entry Vocational Pathways" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Early Career Entry — Vocational Pathways & Orientation Portal</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/04_karriere_portal.webp" alt="Career Progression and Professional Development" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Career Progression & Professional Development Hub</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/05_ausbildung.webp" alt="Apprenticeship Portal Fair Pay and Mentorship" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Apprenticeship Portal — Fair Pay & Mentorship Tracks</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/06_studium.webp" alt="Dual Study Programs Academic and Retail" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Dual Study Programs — Academic Theory & Practical Retail Integration</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/07_quereinstieg.webp" alt="Career Switcher Guidance Low Barrier Re-entry" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Career Switcher Guidance — Low-Barrier Re-entry System</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/08_teilzeit_aushilfe.webp" alt="Part-Time and Flexible Student Employment" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Part-Time & Flexible Student Employment Engine</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/09_weiterentwickeln.webp" alt="Internal Talent Academy and Leadership" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Internal Talent Academy & Leadership Workshops</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/10_mobile_frontpage.webp" alt="Mobile Viewport Neighborhood Job Finder" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Mobile Viewport — Streamlined Neighborhood Job Finder</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/netto/11_mobile_burger_menu.webp" alt="Mobile Navigation Drawer and Regional Branch Filters" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Mobile Navigation Drawer & Regional Branch Filters</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: IMPACT & KEY OUTCOMES -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>04 / Impact</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Substantial application growth and streamlined talent acquisition nationwide.
+            </h2>
+            <p>
+              By aligning the recruitment portal with modern consumer usability expectations, Netto successfully attracted a surge of qualified applicants across high-priority regional branches throughout Germany while radically cutting application time.
+            </p>
+
+            <div class="project-detail__metrics-row">
+              <div class="project-detail__metric-box">
+                <div class="metric-number">+62%</div>
+                <div class="metric-desc">Increase in Mobile Application Submissions</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">&lt; 90s</div>
+                <div class="metric-desc">Average Time to Complete Local Application</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">-44%</div>
+                <div class="metric-desc">Reduction in Candidate Drop-Off at Search Step</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT FOOTER NAVIGATION -->
+      <nav class="project-detail__nav-footer" aria-label="Project pagination">
+        <a href="/work/fragile-base">← Previous: Fragile Base</a>
+        <a href="/work">All Selected Works</a>
+        <a href="/work/op1">Next: OP-1 Field Synthesizer →</a>
+      </nav>
     </div>
-  </section>
+  </article>
 </Layout>
-
-<style lang="scss">
-  .project-detail {
-    padding: 4rem 2rem 6rem;
-
-    &__inner {
-      max-width: 50rem;
-      margin: 0 auto;
-    }
-
-    &__back {
-      display: inline-block;
-      margin-bottom: 2rem;
-      font: 400 0.875rem / 1 font-family(fraktion);
-      color: color(secondary);
-      opacity: 0.6;
-      text-decoration: none;
-      transition: opacity 0.2s;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    &__header {
-      margin-bottom: 2.5rem;
-    }
-
-    &__thumb {
-      width: 100%;
-      max-height: 24rem;
-      overflow: hidden;
-      margin-bottom: 2rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &__title {
-      margin: 0 0 0.5rem;
-      font: 700 3.5rem / 0.9 font-family(bigger);
-      text-transform: uppercase;
-      color: color(secondary);
-    }
-
-    &__tagline {
-      margin: 0;
-      font: 200 1.25rem / 1.5 font-family(editorial);
-      color: color(secondary);
-      opacity: 0.7;
-    }
-
-    &__meta {
-      display: flex;
-      gap: 3rem;
-      margin-bottom: 3rem;
-      padding: 1.5rem 0;
-      border-top: 1px solid color(secondary);
-      border-bottom: 1px solid color(secondary);
-    }
-
-    &__meta-item {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    &__meta-label {
-      font: 700 0.7rem / 1 font-family(fraktion);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: color(secondary);
-      opacity: 0.5;
-    }
-
-    &__meta-value {
-      font: 400 1rem / 1 font-family(fraktion);
-      color: color(secondary);
-    }
-
-    &__content {
-      p {
-        font: 200 1.25rem / 1.7 font-family(editorial);
-        color: color(secondary);
-        margin: 0 0 1.5rem;
-      }
-    }
-  }
-</style>

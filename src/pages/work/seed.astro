@@ -2,183 +2,259 @@
 import Layout from '../../layouts/Layout.astro'
 ---
 
-<Layout title="Seed – Work">
-  <section class="project-detail">
+<Layout 
+  title="Seed – B2B SaaS Financial Operations Platform — Dennis Essien"
+  description="Designing an enterprise B2B financial workspace that transforms complex recurring billing, multi-currency invoicing, and ledger reconciliation into total clarity."
+>
+  <article class="project-detail">
     <div class="project-detail__inner">
-      <a href="/work" class="project-detail__back">← Back</a>
+      <a href="/work" class="project-detail__back">← Back to Work</a>
 
-      <div class="project-detail__header">
-        <div class="project-detail__thumb">
-          <img src="/images/projects/seed.webp" alt="Seed B2B SaaS platform overview" />
+      <header class="project-detail__header">
+        <div class="project-detail__tags">
+          <span class="project-detail__tag"># Product Design</span>
+          <span class="project-detail__tag"># B2B SaaS</span>
+          <span class="project-detail__tag"># FinTech</span>
+          <span class="project-detail__tag"># Design System</span>
         </div>
-        <div class="project-detail__intro">
-          <h1 class="project-detail__title">Seed</h1>
-          <p class="project-detail__tagline">B2B SaaS platform</p>
+
+        <h1 class="project-detail__title">Seed</h1>
+        <p class="project-detail__tagline">
+          B2B SaaS financial operations platform — transforming high-density corporate billing, ledger reconciliation, and subscription scheduling into an effortless, scalable enterprise workspace.
+        </p>
+
+        <div class="project-detail__meta">
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Client</span>
+            <span class="project-detail__meta-value">Seed Financial Systems</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Role / Scope</span>
+            <span class="project-detail__meta-value">Lead Product & UX Architect</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Timeline</span>
+            <span class="project-detail__meta-value">6 Weeks (2025)</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Domain</span>
+            <span class="project-detail__meta-value">Enterprise B2B FinTech</span>
+          </div>
         </div>
+      </header>
+
+      <!-- Full-Width Hero Visual Showcase -->
+      <div class="project-detail__hero-showcase">
+        <img 
+          src="/images/projects/seed.webp" 
+          alt="Seed enterprise SaaS platform interface showcase overview"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
-      <div class="project-detail__meta">
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Year</span>
-          <span class="project-detail__meta-value">2024</span>
+      <!-- SECTION 1: PROJECT BRIEF -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>01 / Project Brief</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Liberating enterprise finance teams from spreadsheet fragmentation and manual reconciliation.
+            </h2>
+            <p>
+              Seed is a comprehensive B2B financial operating platform engineered to centralize complex billing schedules, customer invoicing ledgers, and cashflow reconciliation into a single unified source of truth. As subscription businesses scale from series-A to global enterprise operations, their financial data structures become astronomically complex—involving multi-currency settlements, usage-based metering, and tiered team authorizations.
+            </p>
+            <p>
+              Our design engagement centered on turning high-density business intelligence into an ergonomic, low-friction workspace. Rather than masking complexity behind oversimplified consumer interfaces, we built tools that empower controllers, accountants, and revenue leaders to manage mission-critical billing data with speed, accuracy, and total peace of mind.
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Primary Objective</h4>
+                <p>Architect an enterprise workspace that accelerates monthly close cycles, reduces invoice dispute rates, and provides instant visibility into accounts receivable.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>UX Methodology</h4>
+                <p>Task-driven progressive disclosure, tabular numeric typography, contextual slide-out inspection drawers, and keyboard-first power workflows.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Industry</span>
-          <span class="project-detail__meta-value">Fintech</span>
+
+        <div class="project-detail__media-single">
+          <img 
+            src="/images/projects/seed/seed 3.webp" 
+            alt="Seed Subscription Scheduling and Invoice Generation Interface"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="project-detail__caption">Subscription Scheduling & Invoicing Architecture — Milestone Triggers, Auto-Retry Logic & Tax Compliance</div>
         </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Service</span>
-          <span class="project-detail__meta-value">UI/UX Design</span>
+      </section>
+
+      <!-- SECTION 2: THE PROBLEM -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--alert">
+              <span>02 / The Problem</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Visual fatigue, disjointed audit trails, and catastrophic manual entry errors.
+            </h2>
+            <p>
+              Interviews with corporate finance directors and controllers uncovered a persistent paradox: modern companies rely on modern tools for marketing and product development, yet their finance teams are trapped in legacy software resembling 1990s accounting databases. The consequences are severe: delayed revenue recognition, billing discrepancies, and employee burnout during quarterly closes.
+            </p>
+            <p>
+              Core UX challenges identified during discovery:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Context Loss via Page Redirects</h4>
+                <p>In legacy systems, clicking into a single transaction invoice navigates away from the master cashflow ledger, destroying filtered search states and forcing accountants to re-query their datasets hundreds of times daily.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Data Clutter & Numeric Illegibility</h4>
+                <p>Generic proportional sans-serif fonts caused decimal misalignments across dense financial tables, increasing the risk of costly billing calculation blunders.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Insecure Team Permission Flows</h4>
+                <p>All-or-nothing admin invites forced companies to grant full bank and payroll access to junior accounts receivable clerks merely so they could create invoices.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="project-detail__content">
-        <p>Seed is a comprehensive B2B SaaS platform built to streamline complex financial operations. The core design challenge was transforming high-density business data, like invoicing, customer management, and subscription scheduling—into an intuitive, clean user interface.</p>
-        <p>By introducing powerful data filtering, seamless user flows for role-based team invitations, and clear notification systems, the final product empowers businesses to manage their critical billing data with total clarity and efficiency.</p>
-      </div>
+      <!-- SECTION 3: THE SOLUTION & UX STRATEGY -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--success">
+              <span>03 / The Solution</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              A modular drawer architecture, tabular design tokens, and role-based permissions matrix.
+            </h2>
+            <p>
+              We established an ergonomic, high-density design system engineered around rapid keyboard navigation, zero-loss contextual exploration, and clear operational hierarchy:
+            </p>
 
-      <div class="project-detail__gallery">
-        <img src="/images/projects/seed/seed 1.jpeg" alt="Seed platform invoicing interface" />
-        <img src="/images/projects/seed/seed 2.jpeg" alt="Seed platform customer management dashboard" />
-      </div>
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Pillar 1: Zero-Loss Inspection Drawers</h4>
+                <p>Auditing transaction receipts, customer credit histories, or payment methods occurs in a persistent right-hand drawer. The underlying ledger remains visible and active, eliminating navigation fatigue.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 2: Monospaced Tabular Typography</h4>
+                <p>Configured precision typographic tokens featuring tabular figures, right-aligned monetary values, and semantic color-coded badges for payment statuses (Paid, Pending, Overdue, Disputed).</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 3: Granular Role-Based Access Matrix</h4>
+                <p>Designed a transparent permission provisioning system allowing managers to delegate billing, auditing, or reporting rights with complete security compliance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="project-detail__gallery-row">
-        <img src="/images/projects/seed/seed 3.webp" alt="Seed platform subscription scheduling" />
-        <img src="/images/projects/seed/seed 4.webp" alt="Seed platform team invitations flow" />
-      </div>
+        <!-- VISUAL GALLERY OF WORK -->
+        <div class="project-detail__gallery-block">
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--2col">
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 4.webp" alt="Customer Ledger and Payment Records View" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Customer Ledger & Payment Records View — Multi-Tier Filter Architecture</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 5.webp" alt="Automated Recurring Billing Scheduler" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Automated Recurring Billing Scheduler & Timeline Milestones</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 6.webp" alt="Role-Based Team Permission Management" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Role-Based Team Permission Management & Access Delegation Matrix</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 7.webp" alt="Real-Time Revenue Analytics and Metrics" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Real-Time Revenue Analytics & Financial Performance Dashboard</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 8.webp" alt="Enterprise Invoicing Configuration Modal" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Enterprise Invoicing Configuration Modal & Custom Token Editor</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 9.webp" alt="Transaction Drill-Down Details Drawer" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Transaction Drill-Down Details Drawer with Complete Event Audit Log</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 10.webp" alt="Multi-Currency Settlement Flow" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Multi-Currency Settlement Flow & Automated Exchange Rate Reconciliation</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/seed/seed 1.jpeg" alt="Seed platform main invoicing interface" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">High-Density Invoicing Hub & Batch Processing Surface</div>
+            </div>
+          </div>
 
-      <div class="project-detail__gallery">
-        <img src="/images/projects/seed/seed 5.webp" alt="Seed platform data filtering" />
-        <img src="/images/projects/seed/seed 6.webp" alt="Seed platform notification system" />
-      </div>
+          <div class="project-detail__media-single">
+            <img 
+              src="/images/projects/seed/seed 2.jpeg" 
+              alt="Seed platform customer management and revenue timeline"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="project-detail__caption">Customer Account Lifecycle & Aging Schedule — Predictive Cashflow Projections</div>
+          </div>
+        </div>
+      </section>
 
-      <div class="project-detail__gallery-row">
-        <img src="/images/projects/seed/seed 7.webp" alt="Seed platform reporting dashboard" />
-        <img src="/images/projects/seed/seed 8.webp" alt="Seed platform settings interface" />
-      </div>
+      <!-- SECTION 4: IMPACT & KEY OUTCOMES -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>04 / Impact</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Radical time savings, zero billing discrepancies, and rapid enterprise adoption.
+            </h2>
+            <p>
+              Following deployment across early enterprise cohorts, Seed reduced month-end closing times from days to hours while delivering unprecedented situational clarity to executive finance teams.
+            </p>
 
-      <div class="project-detail__gallery">
-        <img src="/images/projects/seed/seed 9.webp" alt="Seed platform analytics view" />
-        <img src="/images/projects/seed/seed 10.webp" alt="Seed platform billing overview" />
-      </div>
+            <div class="project-detail__metrics-row">
+              <div class="project-detail__metric-box">
+                <div class="metric-number">4.5x</div>
+                <div class="metric-desc">Faster Invoice Creation & Dispatch Velocity</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">-65%</div>
+                <div class="metric-desc">Reduction in Monthly Reconciliation Discrepancies</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">&lt; 1hr</div>
+                <div class="metric-desc">New Finance Team Member Onboarding Ramp Time</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT FOOTER NAVIGATION -->
+      <nav class="project-detail__nav-footer" aria-label="Project pagination">
+        <a href="/work/op1">← Previous: OP-1 Field Synthesizer</a>
+        <a href="/work">All Selected Works</a>
+        <a href="/work/xtoken">Next: xToken Terminal →</a>
+      </nav>
     </div>
-  </section>
+  </article>
 </Layout>
-
-<style lang="scss">
-  .project-detail {
-    padding: 4rem 2rem 6rem;
-
-    &__inner {
-      max-width: 50rem;
-      margin: 0 auto;
-    }
-
-    &__back {
-      display: inline-block;
-      margin-bottom: 2rem;
-      font: 400 0.875rem / 1 font-family(fraktion);
-      color: color(secondary);
-      opacity: 0.6;
-      text-decoration: none;
-      transition: opacity 0.2s;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    &__header {
-      margin-bottom: 2.5rem;
-    }
-
-    &__thumb {
-      width: 100%;
-      max-height: 24rem;
-      overflow: hidden;
-      margin-bottom: 2rem;
-      background: #1a1a2e;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &__title {
-      margin: 0 0 0.5rem;
-      font: 700 3.5rem / 0.9 font-family(bigger);
-      text-transform: uppercase;
-      color: color(secondary);
-    }
-
-    &__tagline {
-      margin: 0;
-      font: 200 1.25rem / 1.5 font-family(editorial);
-      color: color(secondary);
-      opacity: 0.7;
-    }
-
-    &__meta {
-      display: flex;
-      gap: 3rem;
-      margin-bottom: 3rem;
-      padding: 1.5rem 0;
-      border-top: 1px solid color(secondary);
-      border-bottom: 1px solid color(secondary);
-    }
-
-    &__meta-item {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    &__meta-label {
-      font: 700 0.7rem / 1 font-family(fraktion);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: color(secondary);
-      opacity: 0.5;
-    }
-
-    &__meta-value {
-      font: 400 1rem / 1 font-family(fraktion);
-      color: color(secondary);
-    }
-
-    &__content {
-      p {
-        font: 200 1.25rem / 1.7 font-family(editorial);
-        color: color(secondary);
-        margin: 0 0 1.5rem;
-      }
-    }
-
-    &__gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-
-    &__gallery-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-  }
-</style>

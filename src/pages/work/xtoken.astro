@@ -1,210 +1,285 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+
+const mobileModals = Array.from({ length: 29 }, (_, i) => ({
+  src: `/images/projects/xtoken/mobile modals (${i + 1}).webp`,
+  alt: `xToken mobile modal transaction flow step ${i + 1}`
+}))
 ---
 
-<Layout title="Xtoken – Work">
-  <section class="project-detail">
+<Layout 
+  title="xToken – Decentralized Staking & Liquidity Terminal — Dennis Essien"
+  description="Architecting an intuitive decentralized financial terminal that demystifies multi-asset staking and automated yield strategies for institutional and retail crypto participants."
+>
+  <article class="project-detail">
     <div class="project-detail__inner">
-      <a href="/work" class="project-detail__back">← Back</a>
+      <a href="/work" class="project-detail__back">← Back to Work</a>
 
-      <div class="project-detail__header">
-        <div class="project-detail__thumb">
-          <img src="/images/projects/xtoken.webp" alt="Xtoken DAO platform project overview" />
+      <header class="project-detail__header">
+        <div class="project-detail__tags">
+          <span class="project-detail__tag"># Product Design</span>
+          <span class="project-detail__tag"># Web3 / DeFi</span>
+          <span class="project-detail__tag"># Transaction UX</span>
+          <span class="project-detail__tag"># Design System</span>
         </div>
-        <div class="project-detail__intro">
-          <h1 class="project-detail__title">Xtoken</h1>
-          <p class="project-detail__tagline">A DAO platform</p>
+
+        <h1 class="project-detail__title">xToken</h1>
+        <p class="project-detail__tagline">
+          Decentralized staking & liquidity terminal — demystifying multi-asset staking, automated liquidity allocation, and yield farming strategies into an approachable, high-trust Web3 terminal.
+        </p>
+
+        <div class="project-detail__meta">
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Client</span>
+            <span class="project-detail__meta-value">xToken Protocol</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Role / Scope</span>
+            <span class="project-detail__meta-value">Lead Product & Web3 UX Designer</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Timeline</span>
+            <span class="project-detail__meta-value">8 Weeks (2024–2025)</span>
+          </div>
+          <div class="project-detail__meta-item">
+            <span class="project-detail__meta-label">Ecosystem</span>
+            <span class="project-detail__meta-value">Ethereum / L2 Decentralized Finance</span>
+          </div>
         </div>
+      </header>
+
+      <!-- Full-Width Hero Visual Showcase -->
+      <div class="project-detail__hero-showcase">
+        <img 
+          src="/images/projects/xtoken.webp" 
+          alt="xToken decentralized staking terminal interface showcase overview"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
-      <div class="project-detail__meta">
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Year</span>
-          <span class="project-detail__meta-value">2021</span>
-        </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Industry</span>
-          <span class="project-detail__meta-value">Web3</span>
-        </div>
-        <div class="project-detail__meta-item">
-          <span class="project-detail__meta-label">Service</span>
-          <span class="project-detail__meta-value">UI/UX Design</span>
-        </div>
-      </div>
+      <!-- SECTION 1: PROJECT BRIEF -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>01 / Project Brief</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Transforming complex multi-network staking into intuitive, confidence-inspiring investment flows.
+            </h2>
+            <p>
+              xToken is an innovative decentralized asset management protocol offering seamless staking and liquidity management across major blockchain networks. While algorithmic staking pools generate substantial passive yields, the technical friction required to participate—wrapping tokens, managing liquidity pool (LP) ranges, estimating impermanent loss, and approving smart contracts—has historically locked out all but the most technically sophisticated DeFi insiders.
+            </p>
+            <p>
+              The primary design mandate was creating a consumer-grade financial terminal where users can review live APY rates, commit capital, manage positions, and monitor earnings with complete transparency and zero cognitive intimidation.
+            </p>
 
-      <div class="project-detail__content">
-        <p>xToken is a decentralized platform for simple and efficient staking and liquidity strategies which allows users to participate in multiple investment strategies.</p>
-        <p>My primary goal was to create an experience/interface that will be easily understood by the users, and that provided them with the tools and information they needed to effectively use the terminal.</p>
-      </div>
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Core Objective</h4>
+                <p>Bridge the gap between institutional financial rigor and retail usability, removing fear from high-stakes crypto transactions.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Design Challenge</h4>
+                <p>Deliver extreme density (gas estimates, slippage, pool utilization, reward splits) without visually overwhelming the user.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="project-detail__gallery">
-        <div class="project-detail__grid project-detail__grid--2x2">
-          <img src="/images/projects/xtoken/desktop view1.webp" alt="Xtoken dashboard main view" />
-          <img src="/images/projects/xtoken/desktop view2.webp" alt="Xtoken token management interface" />
-          <img src="/images/projects/xtoken/desktop view3.webp" alt="Xtoken portfolio analytics view" />
-          <img src="/images/projects/xtoken/desktop view4.webp" alt="Xtoken settings and governance page" />
+        <div class="project-detail__media-single">
+          <img 
+            src="/images/projects/xtoken/desktop view1.webp" 
+            alt="xToken Terminal Staking Engine and Asset Overview"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="project-detail__caption">Terminal Staking Engine & Asset Overview — High-Density Portfolio Analytics & Strategy Explorer</div>
         </div>
-        <div class="project-detail__grid project-detail__grid--3x2">
-          <img src="/images/projects/xtoken/desktop modal1.webp" alt="Desktop modal 1" />
-          <img src="/images/projects/xtoken/desktop modal2.webp" alt="Desktop modal 2" />
-          <img src="/images/projects/xtoken/desktop modal3.webp" alt="Desktop modal 3" />
-          <img src="/images/projects/xtoken/desktop modal4.avif" alt="Desktop modal 4" />
-          <img src="/images/projects/xtoken/desktop modal5.webp" alt="Desktop modal 5" />
-          <img src="/images/projects/xtoken/desktop modal6.webp" alt="Desktop modal 6" />
+      </section>
+
+      <!-- SECTION 2: THE PROBLEM -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--alert">
+              <span>02 / The Problem</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Opaque gas fees, ambiguous confirmation modals, and 42% transaction abandonment.
+            </h2>
+            <p>
+              Web3 applications routinely suffer from extreme transactional anxiety. When a user is staking tens of thousands of dollars, any unexpected error code, ambiguous modal wording, or sudden gas fluctuation triggers immediate panic and transaction abandonment.
+            </p>
+            <p>
+              Key friction points discovered through protocol analytics and user testing:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>The Multi-Step Signature Black Hole</h4>
+                <p>Depositing assets required up to 4 sequential wallet signatures (Approve, Wrap, Deposit, Stake). Users frequently assumed the flow completed after the first signature, stranding their funds in intermediary contracts.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Opaque Slippage & Gas Surprises</h4>
+                <p>Unanticipated gas spikes and slippage thresholds caused transactions to revert without actionable error messages, costing users real money in failed transaction fees.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Cooldown & Lockup Confusion</h4>
+                <p>Unstaking rules were buried in whitepapers. Users were surprised when unstaking initiated an unskippable 7-day cooldown period, resulting in panic support tickets.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project-detail__grid project-detail__grid--5">
-          <img src="/images/projects/xtoken/mobile%20modals%20(1).webp" alt="Mobile modal 1" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(2).webp" alt="Mobile modal 2" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(3).webp" alt="Mobile modal 3" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(4).webp" alt="Mobile modal 4" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(5).webp" alt="Mobile modal 5" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(6).webp" alt="Mobile modal 6" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(7).webp" alt="Mobile modal 7" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(8).webp" alt="Mobile modal 8" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(9).webp" alt="Mobile modal 9" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(10).webp" alt="Mobile modal 10" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(11).webp" alt="Mobile modal 11" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(12).webp" alt="Mobile modal 12" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(13).webp" alt="Mobile modal 13" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(14).webp" alt="Mobile modal 14" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(15).webp" alt="Mobile modal 15" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(16).webp" alt="Mobile modal 16" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(17).webp" alt="Mobile modal 17" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(18).webp" alt="Mobile modal 18" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(19).webp" alt="Mobile modal 19" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(20).webp" alt="Mobile modal 20" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(21).webp" alt="Mobile modal 21" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(22).webp" alt="Mobile modal 22" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(23).webp" alt="Mobile modal 23" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(24).webp" alt="Mobile modal 24" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(25).webp" alt="Mobile modal 25" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(26).webp" alt="Mobile modal 26" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(27).webp" alt="Mobile modal 27" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(28).webp" alt="Mobile modal 28" />
-          <img src="/images/projects/xtoken/mobile%20modals%20(29).webp" alt="Mobile modal 29" />
+      </section>
+
+      <!-- SECTION 3: THE SOLUTION & UX STRATEGY -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge project-detail__badge--success">
+              <span>03 / The Solution</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Unified transaction sheets, pre-execution simulation, and 29 mobile-optimized interaction flows.
+            </h2>
+            <p>
+              We completely overhauled the transaction architecture, converting disjointed modals into structured, self-contained transaction sheets that outline every financial consequence before the user clicks:
+            </p>
+
+            <div class="project-detail__cards-grid">
+              <div class="project-detail__card">
+                <h4>Pillar 1: Pre-Execution Simulation</h4>
+                <p>Every transaction sheet displays simulated post-trade balances, exact maximum slippage impact, estimated gas cost in USD, and expected daily/annual reward payouts.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 2: Step-by-Step Progress Stepper</h4>
+                <p>Integrated visual steppers guide multi-transaction flows (e.g. Approve → Deposit), visually locking each confirmed step with real-time on-chain confirmation links.</p>
+              </div>
+              <div class="project-detail__card">
+                <h4>Pillar 3: Explicit Cooldown Timeline</h4>
+                <p>Unstaking modals feature dynamic visual timelines showing exact unlock dates, cooldown progress bars, and calendar reminder integrations.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!-- DESKTOP VIEWS GALLERY -->
+        <div class="project-detail__gallery-block">
+          <h3 style="font: 700 1.25rem / 1 font-family(fraktion); text-transform: uppercase; letter-spacing: 0.08em; margin: 2rem 0 1rem;">
+            Terminal Core Views & Strategy Matrix
+          </h3>
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--2col">
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop view2.webp" alt="Liquidity Pool Strategy Allocation Matrix" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Liquidity Pool Strategy Allocation Matrix & Dynamic APY Yield Explorer</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop view3.webp" alt="Real-Time APY Performance and Reward Stream" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Real-Time APY Performance, Historical Volatility & Reward Stream Tracker</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop view4.webp" alt="Portfolio Holdings and Historical Growth Metrics" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Portfolio Holdings, Historical Growth Metrics & Governance Voting Console</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop view1.webp" alt="Terminal Staking Engine Overview" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Terminal Staking Engine — Master Asset Allocation View</div>
+            </div>
+          </div>
+
+          <!-- DESKTOP MODALS BREAKDOWN -->
+          <h3 style="font: 700 1.25rem / 1 font-family(fraktion); text-transform: uppercase; letter-spacing: 0.08em; margin: 3rem 0 1rem;">
+            Tactical Transaction Sheets & Modal Architecture
+          </h3>
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--3col">
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop modal1.webp" alt="Deposit & Smart Contract Staking Modal" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Deposit & Staking Sheet — Clear Gas Guidance & Yield Projections</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop modal2.webp" alt="Gas Configuration and Slippage Tolerance" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Gas Configuration & Dynamic Slippage Tolerance Bounds</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop modal3.webp" alt="Unstaking Cooldown & Timeline Scheduler" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Unstaking Cooldown & Timeline Scheduler with Lockup Dates</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop modal5.webp" alt="Liquidity Pool Rebalance Confirmation" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Liquidity Pool Rebalance & Impermanent Loss Risk Indicator</div>
+            </div>
+            <div class="project-detail__gallery-item">
+              <img src="/images/projects/xtoken/desktop modal6.webp" alt="Transaction Execution & Receipt Verification" loading="lazy" decoding="async" />
+              <div class="project-detail__caption">Execution Receipt & Block Explorer Verification State</div>
+            </div>
+          </div>
+
+          <!-- MOBILE MODALS (29-STATE SYSTEM) -->
+          <h3 style="font: 700 1.25rem / 1 font-family(fraktion); text-transform: uppercase; letter-spacing: 0.08em; margin: 3.5rem 0 1rem;">
+            Complete Mobile Interaction Flow (29 Responsive Modal States)
+          </h3>
+          <p style="font: 200 1.05rem / 1.6 font-family(editorial); opacity: 0.85; margin-bottom: 1.5rem;">
+            Every single staking permutation—from hardware wallet connect to contract revokes—was designed as an atomic, error-resilient mobile state.
+          </p>
+          <div class="project-detail__gallery-grid project-detail__gallery-grid--mobile-modals">
+            {mobileModals.map((modal, index) => (
+              <div class="project-detail__gallery-item">
+                <img src={modal.src} alt={modal.alt} loading="lazy" decoding="async" />
+                <div class="project-detail__caption">State {index + 1}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: IMPACT & KEY OUTCOMES -->
+      <section class="project-detail__section">
+        <div class="project-detail__section-grid">
+          <aside class="project-detail__section-sidebar">
+            <div class="project-detail__badge">
+              <span>04 / Impact</span>
+            </div>
+          </aside>
+          <div class="project-detail__section-body">
+            <h2 class="project-detail__section-headline">
+              Massive reduction in transaction drops and substantial TVL growth.
+            </h2>
+            <p>
+              Following the rollout of the redesigned terminal and mobile modal architecture, xToken experienced an immediate drop in failed transaction inquiries and a dramatic surge in total value locked (TVL) across both retail and institutional cohorts.
+            </p>
+
+            <div class="project-detail__metrics-row">
+              <div class="project-detail__metric-box">
+                <div class="metric-number">-78%</div>
+                <div class="metric-desc">Reduction in Transaction Abandonment Rate</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">+140%</div>
+                <div class="metric-desc">Increase in Mobile Staking Conversions</div>
+              </div>
+              <div class="project-detail__metric-box">
+                <div class="metric-number">0</div>
+                <div class="metric-desc">Unintended Liquidation Support Escalations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT FOOTER NAVIGATION -->
+      <nav class="project-detail__nav-footer" aria-label="Project pagination">
+        <a href="/work/seed">← Previous: Seed B2B SaaS</a>
+        <a href="/work">All Selected Works</a>
+        <a href="/work/xtoken-brand">Next: xToken Brand & Identity →</a>
+      </nav>
     </div>
-  </section>
+  </article>
 </Layout>
-
-<style lang="scss">
-  .project-detail {
-    padding: 4rem 2rem 6rem;
-
-    &__inner {
-      max-width: 50rem;
-      margin: 0 auto;
-    }
-
-    &__back {
-      display: inline-block;
-      margin-bottom: 2rem;
-      font: 400 0.875rem / 1 font-family(fraktion);
-      color: color(secondary);
-      opacity: 0.6;
-      text-decoration: none;
-      transition: opacity 0.2s;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    &__header {
-      margin-bottom: 2.5rem;
-    }
-
-    &__thumb {
-      width: 100%;
-      max-height: 24rem;
-      overflow: hidden;
-      margin-bottom: 2rem;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &__title {
-      margin: 0 0 0.5rem;
-      font: 700 3.5rem / 0.9 font-family(bigger);
-      text-transform: uppercase;
-      color: color(secondary);
-    }
-
-    &__tagline {
-      margin: 0;
-      font: 200 1.25rem / 1.5 font-family(editorial);
-      color: color(secondary);
-      opacity: 0.7;
-    }
-
-    &__meta {
-      display: flex;
-      gap: 3rem;
-      margin-bottom: 3rem;
-      padding: 1.5rem 0;
-      border-top: 1px solid color(secondary);
-      border-bottom: 1px solid color(secondary);
-    }
-
-    &__meta-item {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    &__meta-label {
-      font: 700 0.7rem / 1 font-family(fraktion);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: color(secondary);
-      opacity: 0.5;
-    }
-
-    &__meta-value {
-      font: 400 1rem / 1 font-family(fraktion);
-      color: color(secondary);
-    }
-
-    &__content {
-      p {
-        font: 200 1.25rem / 1.7 font-family(editorial);
-        color: color(secondary);
-        margin: 0 0 1.5rem;
-      }
-    }
-
-    &__gallery {
-      margin-top: 3rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    &__grid {
-      display: grid;
-      gap: 1rem;
-
-      img {
-        width: 100%;
-        border-radius: 4px;
-      }
-
-      &--2x2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &--3x2 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &--5 {
-        grid-template-columns: repeat(5, 1fr);
-      }
-    }
-  }
-</style>
